@@ -34,7 +34,18 @@ public abstract class APIAddBackupStorageMsg extends APICreateMessage {
      * - SimulatorBackupStorage
      */
 	private String type;
-	
+
+	@APIParam(required = false)
+	private boolean importImageInfo;
+
+	public boolean isImportImageInfo() {
+		return importImageInfo;
+	}
+
+	public void setImportImageInfo(boolean importImageInfo) {
+		this.importImageInfo = importImageInfo;
+	}
+
 	public APIAddBackupStorageMsg() {
 	}
 	

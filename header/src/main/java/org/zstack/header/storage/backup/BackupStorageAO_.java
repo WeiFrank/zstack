@@ -3,7 +3,6 @@ package org.zstack.header.storage.backup;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import java.sql.Timestamp;
-import java.util.Date;
 
 @StaticMetamodel(BackupStorageAO.class)
 public class BackupStorageAO_ {
@@ -16,6 +15,7 @@ public class BackupStorageAO_ {
 	public static volatile SingularAttribute<BackupStorageAO, Long> availableCapacity;
 	public static volatile SingularAttribute<BackupStorageAO, BackupStorageState> state;
 	public static volatile SingularAttribute<BackupStorageAO, BackupStorageStatus> status;
+	public static volatile SingularAttribute<BackupStorageAO, Boolean> importImageInfo;
 	public static volatile SingularAttribute<BackupStorageAO, Timestamp> createDate;
 	public static volatile SingularAttribute<BackupStorageAO, Timestamp> lastOpDate;
 }

@@ -38,6 +38,10 @@ public class BackupStorageAO {
 	@Enumerated(EnumType.STRING)
 	private BackupStorageStatus status;
 
+
+    @Column
+    private Boolean importImageInfo;
+
 	@Column
 	private Timestamp createDate;
 
@@ -138,5 +142,13 @@ public class BackupStorageAO {
 
     public void setStatus(BackupStorageStatus status) {
         this.status = status;
+    }
+
+    public Boolean getImportImageInfo() {
+        return importImageInfo;
+    }
+
+    public void setImportImageInfo(Boolean importImageInfo) {
+        this.importImageInfo = importImageInfo;
     }
 }
